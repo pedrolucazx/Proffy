@@ -2,6 +2,9 @@
 import styles from '../styles/FormProffy.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
+import Dropdown from "@material-tailwind/react/Dropdown"
+import DropdownItem from "@material-tailwind/react/DropdownItem"
+
 export default function FormProffy() {
   return (
     <>
@@ -43,19 +46,16 @@ export default function FormProffy() {
               <h2>Sobre a aula</h2>
               <hr />
               <label>Matéria</label>
-              <select id="materia">
-                <option value="" selected disabled>Selecione qual você quer ensinar</option>
-                <option value="artes">Artes</option>
-                <option value="biologia">Biologia</option>
-                <option value="ciencias">Ciências</option>
-                <option value="educacao_fisica">Educação Física</option>
-                <option value="fisica">Física</option>
-                <option value="geografia">Geografia</option>
-                <option value="historia">História</option>
-                <option value="matematica">Matemática</option>
-                <option value="portugues">Português</option>
-                <option value="quimica">Química</option>
-              </select>
+              <Dropdown
+                buttonText="Dropdown"
+              >
+                <DropdownItem color="lightBlue" ripple="light">
+                  Action
+                </DropdownItem>
+                <DropdownItem color="lightBlue" ripple="light">
+                  Something else
+                </DropdownItem>
+              </Dropdown>
               <label> Custo da sua hora por aula (em R$)</label>
               <input type="number" />
             </div>
@@ -74,8 +74,8 @@ export default function FormProffy() {
                   <option value="quinta">Quinta</option>
                   <option value="sexta">Sexta</option>
                 </select>
-                <input type="time" id="das"/>
-                <input type="time" id="ate"/>
+                <input type="time" id="das" />
+                <input type="time" id="ate" />
               </div>
             </div>
 
@@ -84,7 +84,7 @@ export default function FormProffy() {
               <span>Importante! <br /> Preencha todos os dados</span>
               <button type="submit">Salvar cadastro</button>
             </div>
-            
+
           </form>
 
         </section>
