@@ -4,9 +4,12 @@
 
 *{margin:  0; padding: 0; box-sizing: border-box;}
 
-p, span, input, textarea{
+p, span, input, textarea,label,option{
   font-family: 'Poppins', sans-serif;
 }
 h1,h2,h3, button{
   font-family: 'Archivo', sans-serif;
 }
+
+input[type=number]::-webkit-inner-spin-button {-webkit-appearance: none;}
+input[type=number] {-moz-appearance: textfield;appearance: textfield;}
