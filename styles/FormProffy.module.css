@@ -1,0 +1,52 @@
+.header{
+  background: var(--main-color);
+  padding-bottom: 5rem;
+}
+
+.headerIcons{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem 0 4rem;
+}
+
+.headerIcons img:first-child{
+  cursor: pointer;
+}
+
+.headerIcons img:last-child{
+  width: 3.5rem;
+} 
+
+.headerText{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  text-align: left;
+  margin-left: 16rem;
+}
+
+.headerText h1{
+  color: #fff;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.headerText span{
+  color: #D4C2FF;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.containerForm{
+  display: flex;
+  justify-content: center;
+  background-color: #E5E5E5;
+  height: 100vh;
+}
+
+.containerForm form{
+  width: 46rem;
+  
+  background: #FFFFFF;
+}
