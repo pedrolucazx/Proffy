@@ -1,4 +1,83 @@
+/* general settings */
+
 .home{
   background: var(--main-color);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
+/* Settings container and logo */
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+.container .logo{
+  display: flex;
+  flex-direction: column;
+  font-size: 2.25rem;
+}
+.container .logo span{
+  color: #D4C2FF;
+  font-weight: 400;
+}
+
+/* settings buttons */
+.buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buttons button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 15rem;
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 0.6rem;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.buttons button:first-child{
+  background: #9871F5;
+}
+
+.buttons button:first-child:hover{
+  background: #774FD1;
+}
+
+
+.buttons button:last-child{
+  background: #04D361;
+}
+
+.buttons button:last-child:hover{
+  background: #04BF58;
+}
+
+.ilusta{
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  color: #D4C2FF;
+  font-size: 0.75rem;
+}
+
+.ilusta span{
+  margin: 3rem 0  0 30rem;
+}
