@@ -24,6 +24,7 @@
   gap: 1rem;
   justify-content: center;
   text-align: left;
+  margin-left: 26.4rem;
 }
 
 .headerText h1{
@@ -54,10 +55,12 @@
   flex-direction: column;
   padding: 3rem;
   border-radius: 0.5rem;
+  margin-top: -3.5rem;
 }
 
 .containerForm h2{
   color: #32264D;
+  font-size: 1.5rem;
   margin-bottom: 1.2rem;
 }
 
@@ -83,6 +86,7 @@
   height: 10.5rem;
   border-radius: 0.5rem;
   padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 .containerForm form select{
@@ -93,37 +97,72 @@
   padding-left: 1rem;
 }
 
-.containerForm form div{
+.data{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.class{
   display: flex;
   flex-direction: column;
   margin-bottom: 4rem;
 }
 
 
+/* dropdown itens */
+
+
+.dropdownItem{
+  width: 50rem;
+
+}
+
 /* style schedules */
 .schedules{
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 4rem;
 }
-.schedules .week{
+
+.schedulesText{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.schedulesText button{
+  color: #8257E5;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  border: none;
+}
 
+.week{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label{
+  display: flex;
+  flex-direction: column;
+}
 
 /* style Warning */
-/* .containerForm form div:last-child{
+.submit{
   background: #FAFAFC;
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
   height: 100%;
-  gap: 1rem;
-  margin-bottom: 0;
-} */
+  color: #A8A8B3;
+  font-size: 0.8rem;
+  justify-content: space-between;
+}
 
 .submit button{
   background: #04D361;
@@ -134,4 +173,12 @@
   border-radius: 0.5rem;
   cursor: pointer;
   margin-left: 10rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.warning{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }

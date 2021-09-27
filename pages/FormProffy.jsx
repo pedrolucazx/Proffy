@@ -19,14 +19,14 @@ export default function FormProffy() {
           <img src="/Proffy.svg" alt="" />
         </div>
 
+        <div className={styles.headerText}>
+          <h1>Que incrível que você <br /> quer dar aulas.</h1>
+          <span> O primeiro passo, é preencher esse <br /> formulário de inscrição</span>
+        </div>
+
       </header>
       <main>
         <section className={styles.containerForm}>
-
-          <div className={styles.headerText}>
-            <h1>Que incrível que você <br /> quer dar aulas.</h1>
-            <span> O primeiro passo, é preencher esse <br /> formulário de inscrição</span>
-          </div>
 
           <form action="" >
 
@@ -47,19 +47,27 @@ export default function FormProffy() {
               <h2>Sobre a aula</h2>
               <hr />
               <label>Matéria</label>
-              
-                <Dropdown color="lightBlue" buttonText="Alguma coisa a" className={styles.dropdown} >
-                  <DropdownItem value="artes"     > Artes           </DropdownItem>
-                  <DropdownItem value="biologia"  > Biologia        </DropdownItem>
-                  <DropdownItem value="ciencia"   > Ciências        </DropdownItem>
-                  <DropdownItem value="educacao"  > Educação Física </DropdownItem>
-                  <DropdownItem value="fisica"    > Física          </DropdownItem>
-                  <DropdownItem value="geografia" > Geografia       </DropdownItem>
-                  <DropdownItem value="historia"  > História        </DropdownItem>
-                  <DropdownItem value="matematica"> Matemática      </DropdownItem>
-                  <DropdownItem value="portugues" > Português       </DropdownItem>
-                  <DropdownItem value="quimica"   > Química         </DropdownItem>
-                </Dropdown>
+
+              <Dropdown
+                color="purple"
+                buttonText="Selecione qual você quer ensinar"
+                buttonType="filled"
+                size="lg"
+                rounded={false}
+                block={true}
+                ripple="light"
+              >
+                <DropdownItem value="artes" className={styles.dropdownItem} color="purple" ripple="light"> <span>Artes</span></DropdownItem>
+                <DropdownItem value="biologia" className={styles.dropdownItem} color="purple"> <span>Biologia</span></DropdownItem>
+                <DropdownItem value="ciencia" className={styles.dropdownItem} color="purple"> <span>Ciências</span></DropdownItem>
+                <DropdownItem value="educacao" className={styles.dropdownItem} color="purple"> <span>Educação Física</span></DropdownItem>
+                <DropdownItem value="fisica" className={styles.dropdownItem} color="purple"> <span>Física</span></DropdownItem>
+                <DropdownItem value="geografia" className={styles.dropdownItem} color="purple"> <span>Geografia</span></DropdownItem>
+                <DropdownItem value="historia" className={styles.dropdownItem} color="purple"> <span>História</span></DropdownItem>
+                <DropdownItem value="matematica" className={styles.dropdownItem} color="purple"> <span>Matemática</span></DropdownItem>
+                <DropdownItem value="portugues" className={styles.dropdownItem} color="purple"> <span>Português</span></DropdownItem>
+                <DropdownItem value="quimica" className={styles.dropdownItem} color="purple"> <span>Química</span></DropdownItem>
+              </Dropdown>
 
 
               <label> Custo da sua hora por aula (em R$)</label>
@@ -67,34 +75,47 @@ export default function FormProffy() {
             </div>
 
             <div className={styles.schedules}>
-              <h2>Horários disponíveis</h2>
-              <h3>+ Novo horário</h3>
+              <div className={styles.schedulesText}>
+                <h2>Horários disponíveis</h2>
+                <button>+ Novo horário</button>
+              </div>
               <hr />
-              <label>Dia da Semana</label>
+              <div className={styles.label}>
+              </div>
               <div className={styles.week}>
-                <select>
-                  <option value="" selected disabled> Selecione o dia</option>
-                  <option value="segunda">Segunda</option>
-                  <option value="terça">Terça</option>
-                  <option value="quarta">Quarta</option>
-                  <option value="quinta">Quinta</option>
-                  <option value="sexta">Sexta</option>
-                </select>
-                <input type="time" id="das" />
-                <input type="time" id="ate" />
+                <div className={styles.label}>
+                <label>Dia da Semana</label>
+                <Dropdown buttonText="Selecione o dia" color="purple">
+                  <DropdownItem color="purple" valeu="segunda" className="" ><span>Segunda</span></DropdownItem>
+                  <DropdownItem color="purple" valeu="terça" className={styles.dropdownItem} ><span>Terça</span></DropdownItem>
+                  <DropdownItem color="purple" valeu="quarta" className={styles.dropdownItem} ><span>Quarta</span></DropdownItem>
+                  <DropdownItem color="purple" valeu="quinta" className={styles.dropdownItem} ><span>Quinta</span></DropdownItem>
+                  <DropdownItem color="purple" valeu="sexta" className={styles.dropdownItem} ><span>Sexta</span></DropdownItem>
+                </Dropdown>
+                </div>
+                <div className={styles.label}>
+                  <label >Das</label>
+                  <input type="time" id="das" />
+                </div>
+                <div className={styles.label}>
+                  <label>Até</label>
+                  <input type="time" id="ate" />
+                </div>
               </div>
             </div>
 
             <div className={styles.submit}>
-              <img src="/Atenção.svg" alt="" />
-              <span>Importante! <br /> Preencha todos os dados</span>
+              <div className={styles.warning}>
+                <img src="/Atenção.svg" alt="" />
+                <span>Importante! <br /> Preencha todos os dados</span>
+              </div>
               <button type="submit">Salvar cadastro</button>
             </div>
 
           </form>
 
         </section>
-      </main>
+      </main >
     </>
   )
 }
