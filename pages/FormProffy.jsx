@@ -84,7 +84,7 @@ export default function FormProffy() {
               </div>
               <div className={styles.week}>
                 <div className={styles.label}>
-                <label>Dia da Semana</label>
+                <label htmlFor="day">Dia da Semana</label>
                 <Dropdown buttonText="Selecione o dia" color="purple">
                   <DropdownItem color="purple" valeu="segunda" className="" ><span>Segunda</span></DropdownItem>
                   <DropdownItem color="purple" valeu="terça" className={styles.dropdownItem} ><span>Terça</span></DropdownItem>
