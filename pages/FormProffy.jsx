@@ -48,7 +48,7 @@ export default function FormProffy() {
               <hr />
               <label>Matéria</label>
               
-                <Dropdown color="red" buttonText="Block Level Dropdown" className={styles.dropdown} >
+                <Dropdown color="lightBlue" buttonText="Alguma coisa a" className={styles.dropdown} >
                   <DropdownItem value="artes"     > Artes           </DropdownItem>
                   <DropdownItem value="biologia"  > Biologia        </DropdownItem>
                   <DropdownItem value="ciencia"   > Ciências        </DropdownItem>

@@ -114,7 +114,7 @@
 
 
 /* style Warning */
-.containerForm form div:last-child{
+/* .containerForm form div:last-child{
   background: #FAFAFC;
   display: flex;
   flex-direction: row;
@@ -123,7 +123,7 @@
   height: 100%;
   gap: 1rem;
   margin-bottom: 0;
-}
+} */
 
 .submit button{
   background: #04D361;
