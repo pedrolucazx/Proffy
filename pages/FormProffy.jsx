@@ -2,6 +2,7 @@
 import styles from '../styles/FormProffy.module.css'
 import Head from 'next/head'
 import Link from 'next/link'
+import "@material-tailwind/react/tailwind.css";
 import Dropdown from "@material-tailwind/react/Dropdown"
 import DropdownItem from "@material-tailwind/react/DropdownItem"
 
@@ -46,16 +47,21 @@ export default function FormProffy() {
               <h2>Sobre a aula</h2>
               <hr />
               <label>Matéria</label>
-              <Dropdown
-                buttonText="Dropdown"
-              >
-                <DropdownItem color="lightBlue" ripple="light">
-                  Action
-                </DropdownItem>
-                <DropdownItem color="lightBlue" ripple="light">
-                  Something else
-                </DropdownItem>
-              </Dropdown>
+              
+                <Dropdown color="red" buttonText="Block Level Dropdown" className={styles.dropdown} >
+                  <DropdownItem value="artes"     > Artes           </DropdownItem>
+                  <DropdownItem value="biologia"  > Biologia        </DropdownItem>
+                  <DropdownItem value="ciencia"   > Ciências        </DropdownItem>
+                  <DropdownItem value="educacao"  > Educação Física </DropdownItem>
+                  <DropdownItem value="fisica"    > Física          </DropdownItem>
+                  <DropdownItem value="geografia" > Geografia       </DropdownItem>
+                  <DropdownItem value="historia"  > História        </DropdownItem>
+                  <DropdownItem value="matematica"> Matemática      </DropdownItem>
+                  <DropdownItem value="portugues" > Português       </DropdownItem>
+                  <DropdownItem value="quimica"   > Química         </DropdownItem>
+                </Dropdown>
+
+
               <label> Custo da sua hora por aula (em R$)</label>
               <input type="number" />
             </div>

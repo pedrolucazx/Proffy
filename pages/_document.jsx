@@ -14,6 +14,11 @@ export default class Mydocument extends Document {
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;700&family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+
+          <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />
