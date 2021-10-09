@@ -1,30 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from '../styles/FormProffy.module.css'
 import Head from 'next/head'
-import Link from 'next/link'
 import "@material-tailwind/react/tailwind.css";
 import Dropdown from "@material-tailwind/react/Dropdown"
 import DropdownItem from "@material-tailwind/react/DropdownItem"
+import Button from './components/Button';
+import Header from './components/Header'
 
 export default function FormProffy() {
   return (
     <>
       <Head> <title>PROFFY | CADASTRO</title> </Head>
-      <header className={styles.header}>
-
-        <div className={styles.headerIcons}>
-          <Link href="/" passHref>
-            <img src="/Voltar.svg" alt="" />
-          </Link>
-          <img src="/Proffy.svg" alt="" />
-        </div>
-
-        <div className={styles.headerText}>
-          <h1>Que incrível que você <br /> quer dar aulas.</h1>
-          <span> O primeiro passo, é preencher esse <br /> formulário de inscrição</span>
-        </div>
-
-      </header>
+      <Header
+        title ='Que incrível que você' 
+        subtitle='quer dar aulas.'
+        titlespan='O primeiro passo, é preencher esse'
+        titlespan2='formulário de inscrição.'
+      />
       <main>
         <section className={styles.containerForm}>
 
@@ -84,14 +76,14 @@ export default function FormProffy() {
               </div>
               <div className={styles.week}>
                 <div className={styles.label}>
-                <label htmlFor="day">Dia da Semana</label>
-                <Dropdown buttonText="Selecione o dia" color="purple">
-                  <DropdownItem color="purple" valeu="segunda" className="" ><span>Segunda</span></DropdownItem>
-                  <DropdownItem color="purple" valeu="terça" className={styles.dropdownItem} ><span>Terça</span></DropdownItem>
-                  <DropdownItem color="purple" valeu="quarta" className={styles.dropdownItem} ><span>Quarta</span></DropdownItem>
-                  <DropdownItem color="purple" valeu="quinta" className={styles.dropdownItem} ><span>Quinta</span></DropdownItem>
-                  <DropdownItem color="purple" valeu="sexta" className={styles.dropdownItem} ><span>Sexta</span></DropdownItem>
-                </Dropdown>
+                  <label htmlFor="day">Dia da Semana</label>
+                  <Dropdown buttonText="Selecione o dia" color="purple">
+                    <DropdownItem color="purple" valeu="segunda" className="" ><span>Segunda</span></DropdownItem>
+                    <DropdownItem color="purple" valeu="terça" className={styles.dropdownItem} ><span>Terça</span></DropdownItem>
+                    <DropdownItem color="purple" valeu="quarta" className={styles.dropdownItem} ><span>Quarta</span></DropdownItem>
+                    <DropdownItem color="purple" valeu="quinta" className={styles.dropdownItem} ><span>Quinta</span></DropdownItem>
+                    <DropdownItem color="purple" valeu="sexta" className={styles.dropdownItem} ><span>Sexta</span></DropdownItem>
+                  </Dropdown>
                 </div>
                 <div className={styles.label}>
                   <label >Das</label>
@@ -109,7 +101,7 @@ export default function FormProffy() {
                 <img src="/Atenção.svg" alt="" />
                 <span>Importante! <br /> Preencha todos os dados</span>
               </div>
-              <button type="submit">Salvar cadastro</button>
+              <Button type="submit" text="Salvar cadastro" />
             </div>
 
           </form>

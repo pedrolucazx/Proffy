@@ -53,20 +53,20 @@
   transition: background 0.3s;
 }
 
-.buttons button:first-child{
+.buttons .study button{
   background: #9871F5;
 }
 
-.buttons button:first-child:hover{
+.buttons .study:hover button{
   background: #774FD1;
 }
 
 
-.buttons button:last-child{
+.buttons .class button{
   background: #04D361;
 }
 
-.buttons button:last-child:hover{
+.buttons .class:hover button{
   background: #04BF58;
 }
 
